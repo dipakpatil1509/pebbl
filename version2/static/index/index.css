@@ -1,0 +1,44 @@
+@import url('./common.css');
+@import url('./1_landing-section.css');
+@import url('./2_mission-section.css');
+@import url('./3_third-section.css');
+@import url('./4_fourth-section.css');
+
+.tabs-div{
+    position: relative;
+}
+.tab-section{
+    display: none;
+    background: none;
+}
+
+.tab-section.active{
+    display: block;
+}
+
+.tabs{
+    position: absolute;
+    z-index: 123;
+    display: flex;
+    top: -25px;
+    width: 100%;
+}
+
+.tabs-button{
+    background: #fff;
+    border-radius: 500px;
+    padding: 10px 5px;
+    width: 33.333%;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-family: var(--human-sans-medium);
+    font-size: 1.05rem;
+}
+
+.tabs-button.active{
+    background: var(--orange-dark);
+    color: #fff;
+}

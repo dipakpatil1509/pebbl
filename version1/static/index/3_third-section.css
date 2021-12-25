@@ -1,0 +1,237 @@
+
+.third-section{
+    background-color: var(--green-dark);
+    padding-top: 250px;
+    padding-bottom: 100px;
+    overflow:visible;
+}
+
+.third-section .container{
+    text-align: right;
+    position: relative;
+    z-index: 1;
+    padding-right: 5%;
+}
+
+.third-section .tag,
+.third-section .tagline{
+    word-spacing: -5px;
+    line-height: 2.5rem;
+}
+
+.third-section .tag{
+    margin-right: 0px;
+}
+.third-section .description_div{
+    margin:10% auto 0 13%;
+    position: relative;
+}
+
+
+.third-section .btn{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.third-section .images img{
+    position: absolute;
+    object-fit: contain;
+    z-index: 0;
+}
+.third-section .first-plant{
+    bottom: -10px;
+    left:10%;
+    max-height: 250px;
+}
+
+.third-section .other-plant{
+    position: absolute;
+    z-index: 0;
+    bottom: -10px;
+    right:5%;
+    min-height: 350px;
+    min-width: 250px;
+    width: 100%;
+    max-width: 300px;
+}
+
+.third-section .other-plant img{
+    width:100%;
+    height: 100%;
+}
+.third-section .other-plant img._1{
+    max-height: 400px;
+    bottom: -20px;
+    right:-5%;
+}
+
+.third-section .other-plant img._2{
+    max-height: 200px;
+    bottom: -10px;
+    right:25%;
+}
+.third-section .planet{
+    top: 20%;
+    left: 20%;
+    max-height: 120px;
+    max-width: 120px;
+}
+
+.third-section .small-planet{
+    top: 10%;
+    right: 10%;
+    max-height: 50px;
+    max-width: 50px;
+    transform: rotate(60deg);
+}
+
+
+.third-section .small-starlike{
+    top: 20%;
+    right: 10%;
+    max-height: 100px;
+    max-width: 100px;
+}
+
+
+.third-section .extra-small-starlike{
+    top: 40%;
+    right: 55%;
+    max-height: 40px;
+    max-width: 40px;
+    display: none;
+}
+
+.third-section .horizontal-line{
+    position: absolute;
+    object-fit: contain;
+    z-index: 0;
+    top: -30%;
+    right: 100%;
+    max-width: 350px;
+    max-height: 20px;
+}
+
+.third-section .horizontal-line-2{
+    position: absolute;
+    object-fit: contain;
+    z-index: 0;
+    top: 120%;
+    left: 100%;
+    max-width: 350px;
+    max-height: 20px;
+}
+
+
+
+.third-section  .star-like{
+    position: absolute;
+    width:100%;
+    height: 100%;
+    max-width: 150px;
+    max-height: 150px;
+    object-fit: contain;
+    top: -60px;
+    right:5%;
+    z-index: 1333;
+}
+
+@media screen and (max-width:992px) {
+    
+
+    .third-section .small-planet{
+        display: none;
+    }
+
+
+    .third-section .planet{
+        top: 30%;
+        max-height: 150px;
+        max-width: 150px;
+    }
+    .third-section .small-starlike{
+        top: 25%;
+        max-height: 40px;
+        max-width: 40px;
+    }
+
+    .third-section .extra-small-starlike{
+        right: 70%;
+    }
+
+}
+
+
+@media screen and (max-width:800px) {
+    
+    .third-section .horizontal-line{
+        max-height: 10px;
+    }
+
+    .third-section .horizontal-line-2{
+        max-height: 10px;
+    }
+}
+
+
+@media screen and (max-width:600px) {
+        
+    .third-section{
+        background-color: var(--green-dark);
+        padding: 150px 15px 100px;
+    }
+
+    .third-section .tag,
+    .third-section .tagline{
+        line-height: 2.5rem;
+    }
+
+    .third-section .description_div{
+        margin:30% auto;
+        max-width: 80%;
+    }
+
+    .third-section .first-plant{
+        bottom: -10px;
+        left:10%;
+        max-height: 150px;
+    }
+
+    .third-section .other-plant{
+        bottom: -10px;
+        right:0;
+    }
+    .third-section .other-plant img._1{
+        max-height: 250px;
+        max-width: 250px;
+    }
+    .third-section .planet{
+        top: 10%;
+        max-height: 100px;
+        max-width: 100px;
+    }
+    .third-section .small-starlike{
+        top: 5%;
+        max-height: 40px;
+        max-width: 40px;
+    }
+
+    .third-section .extra-small-starlike{
+        right: 80%;
+        max-height: 20px;
+        max-width: 20px;
+    }
+
+    .third-section .horizontal-line{
+        right: auto;
+        left: 75%;
+        max-height: 10px;
+    }
+
+    .third-section .horizontal-line-2{
+        right: auto;
+        left: -25%;
+        max-height: 10px;
+    }
+}
+

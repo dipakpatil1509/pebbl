@@ -1,0 +1,29 @@
+<div class="header_div">
+    <h1>
+        <img src="./assets/logo-white-full.png" alt="">
+        <button class="btn" id="share_button">
+            Share
+        </button>
+    </h1>
+</div>
+<script>
+    
+    const shareData = {
+        title: 'An exclusive members only dating and networking app',
+        text: "Hey you, check out Pebbl. A dating app designed with women and non-binary folks at it's core. It's got an invite by women only dating mode for everyone and a network mode only for women and non-binary people. Sign up for early access!",
+        url: window.location.href
+    }
+
+    const btn = document.querySelector('#share_button');
+
+    
+    btn.addEventListener('click', async () => {
+        try {
+            await navigator.share(shareData);
+            console.log("Shared");
+        } catch(err) {
+            console.log(err);
+        }
+    });
+    
+</script>

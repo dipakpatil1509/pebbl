@@ -1,0 +1,155 @@
+
+.mission-section{
+    background-color: var(--yellow-dark);
+    overflow: visible;
+    padding-top: calc(70px + 3%);
+}
+.mission-section .tag{
+    letter-spacing: -5px;
+    font-size: 3.5rem;
+}
+
+.mission-section .tagline{
+    font-size: 3.5rem;
+}
+.mission-section .title{
+    font-size: 14px;
+    font-family: var(--human-sans-regular);
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    letter-spacing: 0;
+}
+
+.mission-section .container{
+    position: relative;
+    padding-bottom: 230px;
+    overflow: visible;
+    z-index: 1;
+}
+.mission-section .text{
+    margin-left: 7%;
+}
+.mission-section .description{
+    margin:15% auto 15%;
+}
+.mission-section .description_div img{
+    max-width: 650px;
+    width: 100%;
+    height: 100%;
+    max-height: 350px;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    bottom: -180px;
+    left: 0;
+    right: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: 0;
+    border-radius: 8px;
+    z-index: 1333;
+}
+
+/* .mission-section .images .star-like{
+    position: absolute;
+    width:100%;
+    height: 100%;
+    max-width: 150px;
+    max-height: 150px;
+    object-fit: contain;
+    bottom: -80px;
+    left:10%;
+    right: auto;
+    z-index: 1333;
+} */
+
+.mission-section .images .background-design-right,
+.mission-section .images .background-design-left{
+    position: absolute;
+    z-index: 0;
+    top:5%;
+    right:0;
+    width: 60%;
+    height: 100%;
+    max-height: 90%;
+    transform: translateX(50%);
+    object-fit: contain;
+}
+
+
+.mission-section .images .background-design-left{
+    left:0;
+    width: 70%;
+    transform: translateX(-70%);
+}
+
+@media screen and (max-width:600px) {
+    
+    .mission-section{
+        padding-top: 70px;
+    }
+    .mission-section .container{
+        padding-bottom: 50px;
+    }
+    .mission-section .title{
+        margin-bottom: 20px;
+    }
+    .mission-section .tag, .mission-section .tagline{
+        font-size: 2.5rem;
+        letter-spacing: -1px;
+        line-height: 2.2rem;
+    }
+    .mission-section .text{
+        margin-left: 0;
+    }
+    .mission-section .description{
+        max-width: 60%;
+        margin-left: 0;
+    }
+    .mission-section .description_div{
+        margin-left: 0;
+        max-width: 100%;
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+    
+    .mission-section .description_div img{
+        width: 100%;
+        height: 100%;
+        min-width: 400px;
+        min-height: 300px;
+        max-height: 300px;
+        object-fit: cover;
+        object-position: center;
+        position: relative;
+        bottom: unset;
+        left: 0;
+        right: unset;
+        display: block;
+        margin-left: -10%;
+        margin-right:auto;
+        margin: 20% auto 20% -20%;
+        border-radius: 0;
+    }
+    
+    .mission-section .description_div .btn{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .mission-section .images .star-like{
+        max-width: 100px;
+        max-height: 100px;
+        bottom: -50px;
+    }
+
+
+    .mission-section .images .background-design-right{
+        top:0;
+        width: 75%;
+        height: 100%;
+    }
+    .mission-section .images .background-design-left{
+        display: none;
+    }
+}
