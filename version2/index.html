@@ -47,11 +47,25 @@
     <main>
         <!-- Landing Section -->
         <div class="sections landing-section">
-            <h1 class="top-text">BLAHLESS <br>DATiNG,</h1>
-            <h1 class="bottom-text">
-                HERE WE <br>COME.
-                <img src="./assets/art/Elements-05.png" class="down-arrow" alt="">
+            <h1 class="top-text">
+                BLAHLESS <br>
+                DATiNG, 
+                <br> 
+                HERE WE <br>
+                COME.
             </h1>
+            <p class="middle-text">
+                Pebbl is a members only dating app for a clutter free social discovery experience. 
+                <br>
+                Sign up and celebrate singledom!
+            </p>
+            <div class="email_input_div">
+                <input placeholder="Enter your email..." type="email" required="" value="">
+                <button type="submit" class="modal-trigger email">Get early access</button>
+            </div>
+            <!-- <h1 class="bottom-text">
+                <img src="./assets/art/Elements-05.png" class="down-arrow" alt="">
+            </h1> -->
         </div>
 
         <div class="tabs-div">
@@ -87,7 +101,7 @@
                                 <br><br>
                                 Men need an invite from a womxn friend to join the dating pool. No person left unvetted!
                             </p>
-                            <a href="#get_access_form" class="btn">
+                            <a href="#get_access_form" class="btn modal-trigger">
                                 Get early access
                             </a>
                         </div>
@@ -119,7 +133,7 @@
                                 <br>
                                 Magic happens when womxn get together!
                             </p>
-                            <a href="#get_access_form" class="btn">
+                            <a href="#get_access_form" class="btn modal-trigger">
                                 Get early access
                             </a>
                         </div>
@@ -154,7 +168,7 @@
                                 </div>
                             </div>
                         </div>
-                        <a href="#get_access_form" class="btn">
+                        <a href="#get_access_form" class="btn modal-trigger">
                             Get early access
                         </a>
                         <div class="image-div">
@@ -172,31 +186,5 @@
 </body>
 <script src="./static/base.js"></script>
 <script>
-    (function () {
-        $('.tabs-button').click((e)=>{
-            $('.tabs-button').removeClass('active');
-            $('.tabs-button').css('background-color', `var(--white)`)
-            $('.tab-section').removeClass('active');
-            $(e.target).addClass('active');
-            $(e.target.hash).addClass('active');
-            $('.tabs-div').css('background-color', `var(--${$(e.target).data('color')})`)
-            $(e.target).css('background-color', `var(--${$(e.target).data('color')})`)
-        })
-
-        var location = window.location.toString();
-        var id;
-        var validId = ['dating', 'networking', 'events']
-        if(location.includes('#'))
-            id = location.substring(location.lastIndexOf('#'))
-
-        if(id && validId.indexOf(id.replace('#', '')) > 0){
-            $('.tabs-button').removeClass('active');
-            $('.tabs-button').css('background-color', `var(--white)`)
-            $('.tabs-button[href="'+ id +'"]').addClass('active')
-        }
-        $('.tabs-button.active').trigger('click')
-    })();
-
 </script>
-
 </html>

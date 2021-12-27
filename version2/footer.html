@@ -1,72 +1,84 @@
 <div class="footer_div">
-    <img src="./assets/matheus-frade-p4miRVdyapQ-unsplash.jpg" class="mobile_img" alt="">
     <div class="row">
-        <div class="form">
-            <div  id="get_access_form">
-                <div class="form_div">
-                    <div>
-                        <h1 class="underline">Get early access</h1>
-                        <form action="https://submit-form.com/LY16md6k">
-                            <div class="input">
-                                <input type="text" name="name" id="name" placeholder="Name" required>
-                            </div>
-                            <div class="input">
-                                <div class="select">
-                                    <select name="gender" id="gender" required>
-                                        <option value="" selected disabled>Gender</option>
-                                        <option value="Women">Woman</option>
-                                        <option value="Non-binary">Non-binary</option>
-                                        <option value="Men">Man</option> 
-                                    </select>
+        <div id="formModal" class="modal">
+            <div class="form modal-content">
+                <div id="get_access_form">
+                    <div class="form_div">
+                        
+                        <span class="close">&times;</span>
+                        <div>
+                            <h1 class="underline">Get early access</h1>
+                            <form action="https://submit-form.com/LY16md6k">
+                                <div class="input">
+                                    <input type="text" name="name" id="name" placeholder="Name" required>
                                 </div>
-                            </div>
-                            <div class="input">
-                                <input type="tel" name="phone" id="phone" pattern="[0-9]{10}" maxlength="10" placeholder="Mobile Number" required>
-                            </div>
-                            <div class="input">
-                                <div class="select multiple">
-                                    <select multiple name="change_in_pebbl" id="change_in_pebbl" >
-                                        <option value="" selected disabled>What are you looking forward to with Pebbl?</option>
-                                        <option value="Meeting verified people">Meeting verified people</option>
-                                        <option value="Meeting men recommended by other women or non binary people">Meeting men recommended by other women or non binary people</option>
-                                        <option value="Curated events and experiences">Curated events and experiences</option> 
-                                        <option value="Connecting & collaborating with fellow women">Connecting & collaborating with fellow women</option> 
-                                    </select>
-                                </div>
-                            </div>
-                            <!-- <div class="input checkboxes">
-                                <button onclick="showDropdown">What are you looking forward to with Pebbl?</button>
-                                <div class="dropdown">
-                                    <div class="input-checkbox">
-                                        <input type="checkbox" name="change_in_pebbl" id="change_in_pebbl_1" value="Meeting verified people">
-                                        <label for="change_in_pebbl_1">Meeting verified people</label>
-                                    </div>
-                                    <div class="input-checkbox">
-                                        <input type="checkbox" name="change_in_pebbl" id="change_in_pebbl_2" value="Meeting men recommended by other women or non binary people">
-                                        <label for="change_in_pebbl_2">Meeting men recommended by other women or non binary people </label>
-                                    </div>
-                                    <div class="input-checkbox">
-                                        <input type="checkbox" name="change_in_pebbl" id="change_in_pebbl_3" value="Curated events and experiences">
-                                        <label for="change_in_pebbl_3">Curated events and experiences</label>
-                                    </div>
-                                    <div class="input-checkbox">
-                                        <input type="checkbox" name="change_in_pebbl" id="change_in_pebbl_4" value="Connecting & collaborating with fellow women">
-                                        <label for="change_in_pebbl_4">Connecting & collaborating with fellow women</label>
-                                    </div>
-                                    <div class="input-checkbox">
-                                        <input type="checkbox" name="all_of_above" id="all_of_above" value="all_of_above">
-                                        <label for="all_of_above">All of the above</label>
+                                <div class="input">
+                                    <div class="select">
+                                        <select name="gender" id="gender" required>
+                                            <option value="" selected disabled>Gender</option>
+                                            <option value="Women">Woman</option>
+                                            <option value="Non-binary">Non-binary</option>
+                                            <option value="Men">Man</option>
+                                        </select>
                                     </div>
                                 </div>
-                            </div> -->
-                            <input type="submit" value="Submit" class="btn">
-                        </form>
+                                <div class="input">
+                                    <input type="email" name="email" id="email" placeholder="Enter Email" required>
+                                </div>
+                                <div class="input">
+                                    <input type="tel" name="phone" id="phone" pattern="[0-9]{10}" maxlength="10"
+                                        placeholder="Mobile Number" required>
+                                </div>
+                                <div class="input">
+                                    <div class="select multiple">
+                                        <select multiple name="change_in_pebbl" id="change_in_pebbl">
+                                            <option value="" selected disabled>What are you looking forward to with
+                                                Pebbl?</option>
+                                            <option value="Meeting verified people">Meeting verified people</option>
+                                            <option value="Meeting men recommended by other women or non binary people">
+                                                Meeting men recommended by other women or non binary people</option>
+                                            <option value="Curated events and experiences">Curated events and
+                                                experiences</option>
+                                            <option value="Connecting & collaborating with fellow women">Connecting
+                                                & collaborating with fellow women</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <!-- <div class="input checkboxes">
+                                    <button onclick="showDropdown">What are you looking forward to with Pebbl?</button>
+                                    <div class="dropdown">
+                                        <div class="input-checkbox">
+                                            <input type="checkbox" name="change_in_pebbl" id="change_in_pebbl_1" value="Meeting verified people">
+                                            <label for="change_in_pebbl_1">Meeting verified people</label>
+                                        </div>
+                                        <div class="input-checkbox">
+                                            <input type="checkbox" name="change_in_pebbl" id="change_in_pebbl_2" value="Meeting men recommended by other women or non binary people">
+                                            <label for="change_in_pebbl_2">Meeting men recommended by other women or non binary people </label>
+                                        </div>
+                                        <div class="input-checkbox">
+                                            <input type="checkbox" name="change_in_pebbl" id="change_in_pebbl_3" value="Curated events and experiences">
+                                            <label for="change_in_pebbl_3">Curated events and experiences</label>
+                                        </div>
+                                        <div class="input-checkbox">
+                                            <input type="checkbox" name="change_in_pebbl" id="change_in_pebbl_4" value="Connecting & collaborating with fellow women">
+                                            <label for="change_in_pebbl_4">Connecting & collaborating with fellow women</label>
+                                        </div>
+                                        <div class="input-checkbox">
+                                            <input type="checkbox" name="all_of_above" id="all_of_above" value="all_of_above">
+                                            <label for="all_of_above">All of the above</label>
+                                        </div>
+                                    </div>
+                                </div> -->
+                                <input type="submit" value="Submit" class="btn">
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="links">
             <div>
+                
                 <img src="./assets/logo-white-full.png" alt="Pebbl">
                 <span class="hr"></span>
                 <ul>
@@ -86,6 +98,11 @@
                         <a href="#!" class="underline">FAQ</a>
                     </li>
                 </ul>
+                    
+                <div class="email_input_div">
+                    <input placeholder="Enter your email..." type="email" required="" value="">
+                    <button type="submit" class="modal-trigger email">Get early access</button>
+                </div>
 
                 <div class="social_media">
                     <!-- <a href="#!" target="_blank" rel="noopener noreferrer">
@@ -147,7 +164,7 @@
     //     })
     // });
 
-    
+
     // var all_of_above = document.querySelector("input[type=checkbox][name=all_of_above]");
 
     // all_of_above.addEventListener('change', function() {
