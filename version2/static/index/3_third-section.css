@@ -1,43 +1,58 @@
 
 .third-section{
-    padding-top: 150px;
-    padding-bottom: 100px;
+    padding-top: 0;
+    padding-bottom: 0;
     overflow:hidden;
+    flex-wrap: wrap;
 }
 
 .third-section .container{
     text-align: left;
     position: relative;
     z-index: 1;
-    padding: 5%;
+    overflow: hidden;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    flex: none;
+    min-height: 100%;
 }
 
 .third-section .text-div{
-    padding:0 10%;
+    padding:5% 5% 25px;
+    position: relative;
+    flex: 0 0 50%;
+    width: 50%;
+}
+.third-section .content{
+    padding-top: 50px;
 }
 .third-section .tag,
 .third-section .tagline{
-    word-spacing: -5px;
-    line-height: 2.5rem;
+    letter-spacing: normal; 
+    font-size: 4.5rem;
+    line-height: 4rem;
 }
 
 .third-section .tag{
     margin-right: 0px;
 }
 .third-section .description_div{
-    margin:0;
+    margin:5% 0;
     position: relative;
 }
 
 .third-section .image-in{
     padding: 0 10%;
-    position: relative;
 }
 .third-section .image-in .star{
     position: absolute;
-    right: -10px;
-    top: -10px;
-    width: 100px;
+    right: 5%;
+    top: 25%;
+    width: 150px;
     height: 100px;
     object-fit: contain;
     transform: rotate(30deg);
@@ -48,21 +63,70 @@
     max-height: 450px;
     object-fit: cover;
     object-position: center;
-    display: block;
+    display: none;
     border-radius: 150px;
     margin: 35px auto;
 }
 
 
 .third-section .btn{
-    margin: 50px auto;
-    display: block;
     background: #333;
     color: #fff;
 }
 
+.third-section .desktop{
+    flex: 0 0 50%;
+    width: 50%;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    z-index: 3;
+}
+.third-section .desktop img{
+    object-position:center bottom;
+    max-height: 115vh;
+    margin-bottom: -15px;
+}
+.third-section .image-desktops{
+    position: relative;
+    max-height: 15%;
+    display: block;
+    margin: 0 auto;
+}
+.third-section .image-desktops .planet{
+    width: 250px;
+    height: 100%;
+    object-fit: contain;
+    margin-left: 75px;
+}
 
-@media screen and (max-width:600px) {
+.third-section .image-desktops .small-star{
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+@media screen and (max-width:1050px) {
+    
+    .third-section .tag,
+    .third-section .tagline{
+        font-size: 3.5rem;
+        line-height: 3rem;
+    }
+    
+    .third-section .image-desktops .planet{
+        width: 200px;
+    }
+    
+    .third-section .image-in .star{
+        right: 0;
+        top: 15%;
+    }
+}
+@media screen and (max-width:750px) {
         
     .third-section{
         padding: 50px 0 100px;
@@ -72,15 +136,44 @@
         padding-left: 7px;
         padding-right: 7px;
     }
+    .third-section .text-div{
+        width: 100%;
+        flex: none;
+        padding:15% 5% 25px;
+    }
 
-    .third-section .tag,
-    .third-section .tagline{
-        line-height: 2.5rem;
+    .third-section .content{
+        padding-top: 0;
     }
 
     .third-section .description_div{
         margin:25px 0;
         max-width: 100%;
+    }
+    .third-section .image-in{
+        padding: 0 10%;
+        max-width: max-content;
+        position: relative;
+        display: block;
+        margin: 25px auto;
+    }
+    
+    .third-section .image-in .star{
+        right: 20px;
+        top: 10px;
+        width: 100px;
+        height: 100px;
+    }
+    
+    .third-section .image-in img.main{
+        display: block;
+    }
+    .third-section .btn{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .third-section .image-desktops{
+        display: none;
     }
 }
 

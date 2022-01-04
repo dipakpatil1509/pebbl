@@ -1,33 +1,42 @@
 .fourth-section{
-    padding-top: 150px;
-    padding-bottom: 100px;
+    padding-top: 0;
+    padding-bottom: 0;
     overflow: hidden;
 }
 
 .fourth-section .container{
-    min-width: 65%;
-    position: unset;
-    z-index: 5;
-}
-.fourth-section .row{
+    text-align: left;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    max-width: 100%;
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
-    position:unset;
-    z-index: 2;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    flex: none;
+    min-height: 100%;
+}
+.fourth-section .tag,
+.fourth-section .tagline{
+    letter-spacing: normal; 
+    font-size: 4.5rem;
+    line-height: 4rem;
 }
 
-.fourth-section .image,
-.fourth-section .text{
-    flex: 0 0 45%;
-    width: 45%;
-    text-align: left;
+.fourth-section .mobile.image{
     display: flex;
+    flex: 0 0 50%;
+    width: 50%;
+    text-align: left;
     position: relative;
     align-items: center;
 }
-
-.fourth-section .image img{
+.fourth-section .mobile.image{
+    display: none;
+}
+.fourth-section .mobile.image img{
     width: 100%;
     max-height: 450px;
     object-fit: contain;
@@ -36,16 +45,22 @@
     position: relative;
     overflow: hidden;
 }
-.fourth-section .text{
-    padding: 15px;
-    flex: 0 0 45%;
-    width: 45%;
-    margin-left: auto;
-    margin-right: 0;
-    display: block;
-    position: relative;
-}
 
+.fourth-section .text-div{
+    flex: 0 0 50%;
+    width: 50%;
+    text-align: left;
+    position: relative;
+    padding: 5% 0 25px;
+}
+.fourth-section .text{
+    padding:5% 5% 0;
+}
+.fourth-section .fences{
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+}
 .fourth-section .text .planet{
     width: 150px;
     position: absolute;
@@ -53,62 +68,76 @@
     right: -40px;
     height: 100%;
     object-fit: contain;
-    display: flex;
+    display: none;
     align-items:center;
 }
 .fourth-section .description{
-    max-width: 80%;
     line-height: 1.1rem;
 }
 .fourth-section .description_div{
-    margin:10% auto 0 25%;
-    max-width: 60%;
+    margin:5% 0;
 }
 .fourth-section .btn{
-    margin-top: 60px;
-    margin-bottom: 0;
+    margin: 50px 0 0 5%;
     background: #333;
     color: #fff;
+    display: block;
+}
+
+.fourth-section .image-div.desktop{
+    flex: 0 0 50%;
+    width: 50%;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    z-index: 3;
 }
 @media screen and (max-width:992px) {
-    .fourth-section .description_div{
-        margin:5% auto;
-        max-width: 100%;
+    
+    .fourth-section .tag{
+        font-size: 3.5rem;
+        line-height: 3rem;
     }
     
-    .fourth-section .description{
-        max-width: 60%;
-        margin:15% auto;
-    }
-    .fourth-section .btn{
-        margin-bottom: 0;
-        margin-left: auto;
-        margin-right: auto;
-    }
     
 }
-@media screen and (max-width:600px) {
+@media screen and (max-width:750px) {
     
     .fourth-section{
         padding-top: 40px;
     }
 
-    .fourth-section .row{
-        position:relative;
-    }
-    
-
-    .fourth-section .image,
-    .fourth-section .text{
+    .fourth-section .image.mobile,
+    .fourth-section .text-div{
         flex: 0 0 100%;
         width: 100%;
     }
+    .fourth-section .text-div{
+        padding: 20% 7% 0;
+    }
     .fourth-section .text{
-        padding: 25% 7% 0;
+        padding: 0;
     }
     
-    .fourth-section .image img{
-        max-height: 450px;
+    .fourth-section .fences{
+        display: none;
+    }
+
+    .fourth-section .mobile.image{
+        display: flex;
+        margin: auto;
+        padding-left: 7px;
+        padding-right: 7px;
+        overflow: hidden;
+        max-width: max-content  ;
+    }
+    
+    .fourth-section .mobile.image img{
+        max-height: 350px;
+    }
+    
+    .fourth-section .text .planet{
+        display: flex;
     }
     
     .fourth-section .description_div{

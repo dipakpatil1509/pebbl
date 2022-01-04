@@ -13,18 +13,44 @@
 }
 
 .tab-section.active{
-    display: block;
+    display: flex;
 }
-
-.tabs{
+.tabs-desktop{
+    display: flex;
+    position: relative;
+    column-gap: 10px;
+    z-index: 132;
+    margin: 5px 0 45px;
+}
+.tabs-mobile{
     position: absolute;
     z-index: 123;
-    display: flex;
+    display: none;
     top: -25px;
     width: 100%;
 }
 
-.tabs-button{
+.tabs-desktop .tabs-button{
+    background: none;
+    color: #000;
+    text-decoration: underline;
+    position: relative;
+}
+
+.tabs-desktop .tabs-button:not(:first-of-type)::before{
+    content: "";
+    width: 5px;
+    height: 5px;
+    background: #fff;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+
+.tabs-mobile .tabs-button{
     background: #fff;
     border-radius: 500px;
     padding: 10px 5px;
@@ -38,7 +64,20 @@
     font-size: 1.05rem;
 }
 
-.tabs-button.active{
+.tabs-mobile .tabs-button.active{
     background: var(--orange-dark);
     color: #fff;
+}
+
+.tabs-desktop .tabs-button.active{
+    color: #fff;
+    text-decoration: none;
+}
+@media screen and (max-width:750px) {
+    .tabs-desktop{
+        display: none;
+    }
+    .tabs-mobile{
+        display: flex;
+    }
 }

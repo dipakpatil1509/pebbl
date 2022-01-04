@@ -47,11 +47,11 @@
     <main>
         <!-- Landing Section -->
         <div class="sections landing-section">
-            <h1 class="top-text">
-                BLAHLESS <br>
+            <h1 class="top-text-desktop">
+                BLAHLESS <span class="br"></span>
                 DATiNG, 
                 <br> 
-                HERE WE <br>
+                HERE WE <span class="br"></span>
                 COME.
             </h1>
             <p class="middle-text">
@@ -61,7 +61,9 @@
             </p>
             <div class="email_input_div">
                 <input placeholder="Enter your email..." type="email" required="" value="">
-                <button type="submit" class="modal-trigger email">Get early access</button>
+                <div class="submit-btn">
+                    <button type="submit" class="modal-trigger email">Get early access</button>
+                </div>
             </div>
             <!-- <h1 class="bottom-text">
                 <img src="./assets/art/Elements-05.png" class="down-arrow" alt="">
@@ -70,14 +72,14 @@
 
         <div class="tabs-div">
 
-            <div class="tabs">
-                <a href="#dating" data-color="orange-dark" class="tabs-button active">
+            <div class="tabs-mobile">
+                <a href="#dating" data-color="orange-dark" data-button="orange-dark" class="tabs-button active">
                     Dating
                 </a>
-                <a href="#networking" data-color="yellow-dark" class="tabs-button">
+                <a href="#networking" data-color="yellow-dark"  data-button="yellow-dark" class="tabs-button">
                     Networking
                 </a>
-                <a href="#events" data-color="green-dark" class="tabs-button">
+                <a href="#events" data-color="green-dark" data-button="green-dark" class="tabs-button">
                     Events
                 </a>
             </div>
@@ -88,11 +90,22 @@
                         <div class="images">
                             <!-- <img src="./assets/art/star-like.png" class="star-like" alt=""> -->
                             <img src="./assets/art/Group 21@4x.png" alt="" class="background-design-right">
-                            <img src="./assets/art/Group 21@4x.png" alt="" class="background-design-left">
+                        </div>
+                        
+                        <div class="tabs-desktop active">
+                            <a href="#dating" data-color="orange-dark" data-button="none" class="tabs-button active">
+                                Dating
+                            </a>
+                            <a href="#networking" data-color="yellow-dark" data-button="none"  class="tabs-button">
+                                Networking
+                            </a>
+                            <a href="#events" data-color="green-dark" data-button="none"  class="tabs-button">
+                                Events
+                            </a>
                         </div>
                         <div class="text">
                             <h1 class="tag">
-                                DATiNG,<br>WORTH<br> YOUR TiME.
+                                DATiNG,<br>THAT'S WORTH<br> YOUR TiME.
                             </h1>
                         </div>
                         <div class="description_div">
@@ -106,7 +119,10 @@
                             </a>
                         </div>
                     </div>
-                    <div class="image-div">
+                    <div class="image-div desktop">
+                        <img src="./assets/david-nunez-yUoNrhd3tDM-unsplash.jpg" alt="Dating Pebbl">
+                    </div>
+                    <div class="image-div mobile">
                         <img src="./assets/asset-2.png" alt="Pebbl App Form">
                     </div>
                 </div>
@@ -118,27 +134,48 @@
 
                 <div class="container">
                     <div class="text-div">
-                            
-                        <h1 class="tag">
-                            A BLAH-LESS WOMXN ONLY NETWORK.
-                        </h1>
-                        <div class="image-in">
-                            <img src="./assets/art/Asset 20@4x.png" class="star" alt="">
-                            <img src="./assets/jed-villejo-Wv2hRULXg8M-unsplash.jpg" class="main" alt="">
+                        <div class="image-desktops">
+                            <img src="./assets/art/Group 26@4x.png" class="planet" alt="">
+                            <img src="./assets/art/star-like.png" alt="" class="small-star">
                         </div>
-                        <div class="description_div">
-                            <p class="description">
-                                Access a womxn only safe space and find your partner in prime! Spark meaningful connections, find new girl-pals and fuel collabs.
-                                <br>
-                                <br>
-                                Magic happens when womxn get together!
-                            </p>
-                            <a href="#get_access_form" class="btn modal-trigger">
-                                Get early access
-                            </a>
+                        <div class="content">
+                                
+                            <div class="tabs-desktop">
+                                <a href="#dating" data-color="orange-dark" data-button="none" class="tabs-button">
+                                    Dating
+                                </a>
+                                <a href="#networking" data-color="yellow-dark" data-button="none"  class="tabs-button active">
+                                    Networking
+                                </a>
+                                <a href="#events" data-color="green-dark" data-button="none"  class="tabs-button">
+                                    Events
+                                </a>
+                            </div>
+                                
+                            <h1 class="tag">
+                                A BLAH-LESS WOMXN ONLY NETWORK.
+                            </h1>
+                            <div class="image-in">
+                                <img src="./assets/art/star-like.png" class="star" alt="">
+                                <img src="./assets/jed-villejo-Wv2hRULXg8M-unsplash.jpg" class="main" alt="">
+                            </div>
+                            <div class="description_div">
+                                <p class="description">
+                                    Access a womxn only safe space and find your partner in prime! Spark meaningful connections, find new girl-pals and fuel collabs.
+                                    <br>
+                                    <br>
+                                    Magic happens when womxn get together!
+                                </p>
+                                <a href="#get_access_form" class="btn modal-trigger">
+                                    Get early access
+                                </a>
+                            </div>
                         </div>
                     </div>
-                    <div class="image-div">
+                    <div class="image-div desktop">
+                        <img src="./assets/jed-villejo-Wv2hRULXg8M-unsplash.jpg" class="main" alt="">
+                    </div>
+                    <div class="image-div mobile">
                         <img src="./assets/asset-1.png" alt="Pebbl App Form">
                     </div>
                 </div>
@@ -148,11 +185,23 @@
             <!-- Fourth Section -->
             <div class="sections fourth-section tab-section" id="events">
                 <div class="container">
-                    <div class="row">
-                        <div class="image">
-                            <img src="./assets/levi-guzman-zdSoe8za6Hs-unsplash.jpg" alt="">
-                        </div>
+                    <div class="image mobile">
+                        <img src="./assets/levi-guzman-zdSoe8za6Hs-unsplash.jpg" alt="">
+                    </div>
+                    <div class="text-div">
+                        <img src="./assets/art/Group 31@4x2.png" alt="" class="fences">
                         <div class="text">
+                            <div class="tabs-desktop">
+                                <a href="#dating" data-color="orange-dark" data-button="none" class="tabs-button">
+                                    Dating
+                                </a>
+                                <a href="#networking" data-color="yellow-dark" data-button="none"  class="tabs-button">
+                                    Networking
+                                </a>
+                                <a href="#events" data-color="green-dark" data-button="none"  class="tabs-button active">
+                                    Events
+                                </a>
+                            </div>
                             <img src="./assets/art/Group 26@4x.png" class="planet" alt="">
                             <div>
                                 <h1 class="tag">
@@ -160,10 +209,9 @@
                                 </h1>
                                 <div class="description_div">
                                     <p class="description">
-                                        Switch to the dating mode and meet trustworthy singletons recommended
-                                        by your <span class="underline">wing-womxn</span> from the network.
-                                        Men need an invite from a womxn friend to join the dating pool.
-                                        No person left unvetted!
+                                        We curate womxn only events and experiences so you don't have to! Connect with like-minded, verified womxn - IRL.
+                                        <br><br>
+                                        Mobilize your clan for a riveting evening or set off on a solo social quest in the city!
                                     </p>
                                 </div>
                             </div>
@@ -171,9 +219,12 @@
                         <a href="#get_access_form" class="btn modal-trigger">
                             Get early access
                         </a>
-                        <div class="image-div">
-                            <img src="./assets/asset.png" alt="Pebbl App Form">
-                        </div>
+                    </div>
+                    <div class="image-div desktop">
+                        <img src="./assets/levi-guzman-zdSoe8za6Hs-unsplash.jpg" alt="">
+                    </div>
+                    <div class="image-div mobile">
+                        <img src="./assets/asset.png" alt="Pebbl App Form">
                     </div>
                 </div>
             </div>
@@ -184,7 +235,7 @@
     <!--Footer-->
     <footer id="footer"></footer>
 </body>
-<script src="./static/base.js?version=1"></script>
+<script src="./static/base.js?version=2"></script>
 <script>
 </script>
 </html>
