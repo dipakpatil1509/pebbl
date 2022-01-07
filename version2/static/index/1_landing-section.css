@@ -59,13 +59,13 @@
 
 @media screen and (max-width:750px){
     .landing-section{
-        background-position-x: 55%;
+        background-position-x: 53%;
         padding:70px 5%;
-        -webkit-background-size: cover;
+        -webkit-background-size: fill;
         -moz-background-size: cover;
         -o-background-size: cover;
-        background-size: cover;
-        min-height: 87vh;
+        background-size:cover;
+        min-height: calc(100vh + 28px);
         text-align: center;
         display: flex;
         align-items: center;

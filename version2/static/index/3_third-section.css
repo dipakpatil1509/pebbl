@@ -131,7 +131,7 @@
         max-width: 100%;
     }
     .third-section .image-in{
-        padding: 0 15%;
+        padding: 0 12%;
         max-width: max-content;
         position: relative;
         display: block;
@@ -147,7 +147,7 @@
     
     .third-section .image-in img.main{
         display: block;
-        min-height: 400px;
+        min-height: 380px;
     }
     .third-section .btn{
         margin-bottom: 0;
