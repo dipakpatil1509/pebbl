@@ -16,7 +16,7 @@
 }
 .landing-section h1{
     font-family: var(--glorify-regular);
-    font-size: 6rem;
+    font-size: 5.5rem;
     line-height: 5rem;
     letter-spacing: -1px;
     font-weight: normal;
@@ -57,30 +57,39 @@
 }
 
 
-@media screen and (max-width:600px){
+@media screen and (max-width:750px){
     .landing-section{
         background-position-x: 55%;
-        padding:calc(70px + 30%) 5% 0;
+        padding:70px 5%;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
         min-height: 87vh;
         text-align: center;
+        display: flex;
+        align-items: center;
     }
     .landing-section .email_input_div{
         margin-left: auto;
     }
-    .br{
-        display: block;
+    .landing-section .content-div{
+        text-align: left;
+        background: rgba(0,0,0,0.5);
+        padding: 30px 5%;
+        border-radius: 10px;
+        margin: 0 5%;
     }
     .landing-section h1{
-        font-family: var(--glorify-bold);
+        font-family: var(--glorify-regular);
         letter-spacing: -1px;
-        font-size: 2.7rem;
-        line-height: 2.2rem;
+        font-size: 2.2rem;
+        line-height: 2rem;
     }
-    
+
+    .landing-section .email_input_div{
+        margin-bottom: 0;
+    }
 
     .landing-section h1.bottom-text{
         bottom: 10vh;

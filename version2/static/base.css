@@ -455,6 +455,9 @@ input[type=number]::-webkit-outer-spin-button {
     width: 100%;
     margin-left: auto;
     margin-right: 0;
+    display: flex;
+    align-items: start;
+    row-gap: 25px;
 }
 
 .footer_div .links .links-div{
@@ -470,6 +473,7 @@ input[type=number]::-webkit-outer-spin-button {
 .footer_div .links .social_media_div .email_input_div{
     margin-left: 0;
     margin-right: 0;
+    margin-top: 0;
     max-width: 100%;
 }
 .footer_div .links .social_media_div .email_input_div input{
@@ -581,11 +585,11 @@ input[type=number]::-webkit-outer-spin-button {
 
 .email_input_div .submit-btn button{
     box-sizing: border-box;
-    background:#000;
+    background:var(--orange-dark);
     outline: none;
     border: none;
-    border-radius: 50px;
-    padding: 10px 5px;
+    border-radius: 10px;
+    padding: 15px 5px;
     color:#fff;
     cursor: pointer;
     max-width: max-content;
@@ -682,6 +686,15 @@ input[type=number]::-webkit-outer-spin-button {
     .footer_div .row{
         row-gap: 50px;
     }
+    .email_input_div input{
+        height: 40px;
+    }
+    .email_input_div .submit-btn{
+        padding: 0 5px;
+    }
+    .email_input_div .submit-btn button{
+        padding: 5px;
+    }
 
     .footer_div .form,
     .footer_div .links{
@@ -699,6 +712,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 
 }
+
 
 @media only screen and (max-width:600px) {
     
@@ -780,6 +794,12 @@ input[type=number]::-webkit-outer-spin-button {
     .header_div{
         padding-top: 8%;
     }
+
+    .header_div h1{
+        justify-content: flex-start;
+        padding: 0 10px;
+    }
+	
     
     .header_div h1{
         font-size: 1.7rem;
@@ -796,7 +816,6 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 @media only screen and (max-width: 400px) {
-	
     .footer_div .form_div h1{
         font-size: 1.75rem;
         word-spacing: -5px;
@@ -807,10 +826,6 @@ input[type=number]::-webkit-outer-spin-button {
 
 
 @media only screen and (max-width: 380px) {
-    .header_div h1{
-        justify-content: flex-start;
-        padding: 0 10px;
-    }
     
     .footer_div .form_div{
         max-height: 650px;

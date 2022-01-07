@@ -5,11 +5,6 @@
     padding-top: 0;
     flex-wrap: wrap;
 }
-.mission-section .tag{
-    letter-spacing: normal; 
-    font-size: 4.5rem;
-    line-height: 4rem;
-}
 
 .mission-section .tagline{
     font-size: 3.5rem;
@@ -36,7 +31,6 @@
     min-height: 100%;
 }
 .mission-section .text-div{
-    padding:10% 5% 25px;
     border-radius: 25px;
     position: relative;
     flex: 0 0 50%;
@@ -44,13 +38,6 @@
 }
 .mission-section .text{
     margin-left: 0;
-}
-.mission-section .description{
-    margin:5% 0;
-}
-.mission-section .description_div {
-    margin: 0;
-    max-width: 100%;
 }
 .mission-section .description_div img{
     max-width: 650px;
@@ -95,6 +82,10 @@
     object-fit: contain;
 }
 
+.mission-section .btn{
+    background: #333;
+    color: #fff;
+}
 
 .mission-section .desktop{
     flex: 0 0 50%;
@@ -105,22 +96,15 @@
     z-index: 3;
 }
 
-@media screen and (max-width:992px) {
-    
-    .mission-section .tag{
-        font-size: 3.5rem;
-        line-height: 3rem;
-    }
-}
 
 @media screen and (max-width:750px) {
     
     .mission-section{
         padding-top: 35px;
-        padding-bottom: 100px;
+        padding-bottom: 25px;
     }
     .mission-section .container{
-        padding-bottom: 50px;
+        padding-bottom: 20px;
         padding-left: 7px;
         padding-right: 7px;
     }
@@ -139,6 +123,7 @@
         padding:70% 10% 25px;
         width: 100%;
         flex: 0 0 100%;
+        margin-bottom: 15px;
     }
     .mission-section .text{
         color: #fff;

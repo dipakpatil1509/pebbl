@@ -7,7 +7,10 @@
     overflow: hidden;
     padding-top:calc(70px + 5%);
 }
-
+.sections .text-div{
+    padding:10% 5% 25px;
+    padding-top: max(200px, 10%);
+}
 .btn{
     padding: 10px 12px;
     margin: 50px 0 25px;
@@ -26,6 +29,7 @@
     font-size: 1.1rem;
     font-family: var(--human-sans-regular);
     text-align: left;
+    margin: 5% 0;
 }
 
 .tag, .tagline{
@@ -36,7 +40,9 @@
     letter-spacing: 0px;
 }
 .tag{
-    letter-spacing: 0px;
+    letter-spacing: normal; 
+    font-size: 4.5rem;
+    line-height: 4rem;
 }
 .tagline{
     font-family: var(--adobe-ernie);
@@ -45,7 +51,7 @@
     margin-top: 5px;
 }
 .image-div{
-    margin: 100px 0 50px;
+    margin: 50px 0 25px;
     padding: 0 15%;
 }
 .image-div img{
@@ -66,6 +72,18 @@
     display: none;
 }
 
+.rightArrow{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 70px;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+}
 @media screen and (max-width:750px) {
     .image-div.mobile{
         display: block;
@@ -77,11 +95,21 @@
         display: none;
     }
 }
+
+@media screen and (max-width:992px) {
+    
+    .tag{
+        font-size: 3.5rem;
+        line-height: 3rem;
+    }
+    
+    
+}
 @media screen and (max-width:600px){
     
     .tag, .tagline{
-        font-size: 2.5rem;
-        line-height: 2.8rem;
+        font-size: 2.8rem;
+        line-height: 2.6rem;
     }
 }
 

@@ -18,12 +18,6 @@
     flex: none;
     min-height: 100%;
 }
-.fourth-section .tag,
-.fourth-section .tagline{
-    letter-spacing: normal; 
-    font-size: 4.5rem;
-    line-height: 4rem;
-}
 
 .fourth-section .mobile.image{
     display: flex;
@@ -51,15 +45,18 @@
     width: 50%;
     text-align: left;
     position: relative;
-    padding: 5% 0 25px;
 }
 .fourth-section .text{
-    padding:5% 5% 0;
+    padding:0 0 0;
 }
 .fourth-section .fences{
     width: 100%;
     height: 100px;
     object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 5% 0;
 }
 .fourth-section .text .planet{
     width: 150px;
@@ -71,14 +68,7 @@
     display: none;
     align-items:center;
 }
-.fourth-section .description{
-    line-height: 1.1rem;
-}
-.fourth-section .description_div{
-    margin:5% 0;
-}
 .fourth-section .btn{
-    margin: 50px 0 0 5%;
     background: #333;
     color: #fff;
     display: block;
@@ -92,28 +82,23 @@
     position: relative;
     z-index: 3;
 }
-@media screen and (max-width:992px) {
-    
-    .fourth-section .tag{
-        font-size: 3.5rem;
-        line-height: 3rem;
-    }
-    
-    
-}
 @media screen and (max-width:750px) {
     
     .fourth-section{
         padding-top: 40px;
+        padding-bottom: 35px;
     }
-
+    .fourth-section .container{
+        padding: 0 7px;
+    }
+    
     .fourth-section .image.mobile,
     .fourth-section .text-div{
         flex: 0 0 100%;
         width: 100%;
     }
     .fourth-section .text-div{
-        padding: 20% 7% 0;
+        padding: 20% 10% 15px;
     }
     .fourth-section .text{
         padding: 0;
@@ -126,8 +111,6 @@
     .fourth-section .mobile.image{
         display: flex;
         margin: auto;
-        padding-left: 7px;
-        padding-right: 7px;
         overflow: hidden;
         max-width: max-content  ;
     }
