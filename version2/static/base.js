@@ -21,6 +21,7 @@ $(function(){
     }
 
     $('.tabs-button').click((e)=>{
+        e.preventDefault();
         if(window.innerWidth <= mobileWidth){
             $('.tabs-mobile .tabs-button').removeClass('active');
             $('.tabs-mobile .tabs-button').removeClass('br-bl-0');
