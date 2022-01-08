@@ -84,14 +84,14 @@
 
 .tabs-mobile .tabs-button.first{
     background: var(--orange-dark);
-    border-top-left-radius: 0;
+    /* border-top-left-radius: 0; */
 }
 .tabs-mobile .tabs-button.second{
     background: var(--yellow-dark);
 }
 .tabs-mobile .tabs-button.third{
     background: var(--green-dark);
-    border-top-right-radius: 0;
+    /* border-top-right-radius: 0; */
 }
 .tabs-mobile .tabs-button.first.active{
     border-top-left-radius: 30px;
