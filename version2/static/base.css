@@ -903,6 +903,7 @@ input[type=number]::-webkit-outer-spin-button {
     }
     .footer_div .links .social_media p{
         width: 100%;
+        margin-bottom: 10px;
     }
 
     .footer_div .links .social_media a{
