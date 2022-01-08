@@ -641,7 +641,7 @@ input[type=number]::-webkit-outer-spin-button {
     outline: none;
     border: none;
     border-radius:20px;
-    padding: 5px 8px;
+    padding: 10px 8px;
     /* height: 100%; */
     color:#fff;
     cursor: pointer;
