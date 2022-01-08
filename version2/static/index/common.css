@@ -53,8 +53,9 @@
     margin-top: 5px;
 }
 .image-div{
-    margin: 50px 0 25px;
-    padding: 0 15%;
+    margin: 10px 0 25px;
+    padding: 0 8%;
+    width: 100%;
 }
 .image-div img{
     width: 100%;
@@ -72,6 +73,22 @@
 
 .image-div.mobile{
     display: none;
+}
+
+.image-div .border-frame{
+    background-image: url('../../assets/Elements-06.png');
+    /* -webkit-background-size: fill;
+    -moz-background-size: cover;
+    -o-background-size: cover; */
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-origin: border-box;
+    padding:10% 10%;
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: relative;
 }
 
 .rightArrow{

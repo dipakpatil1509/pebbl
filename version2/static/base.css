@@ -562,13 +562,13 @@ input[type=number]::-webkit-outer-spin-button {
     margin:20% 0 2%;
     list-style: none;
     text-align: left;
-    columns: 2;
-    -webkit-columns: 2;
-    -moz-columns: 2;
+    columns: 1;
+    -webkit-columns: 1;
+    -moz-columns: 1;
 }
 
 .footer_div .links li{
-    margin: 50px 0;
+    margin: 30px 0;
     width: 100%;
     font-size: 14.5px;
     box-sizing: border-box;
@@ -583,6 +583,7 @@ input[type=number]::-webkit-outer-spin-button {
     text-align: left;
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .footer_div .links .social_media a{
@@ -603,8 +604,9 @@ input[type=number]::-webkit-outer-spin-button {
 .footer_div .links .social_media p{
     display: inline-block;
     vertical-align:  bottom;
-    margin:12px 0 0 auto;
+    margin:12px 0 0 0;
     font-size: 0.9rem;
+
 }
 
 .email_input_div{
@@ -895,6 +897,14 @@ input[type=number]::-webkit-outer-spin-button {
         display: flex;
         align-items: center;
     }
+    .footer_div .links .social_media{
+        text-align: center;
+        justify-content: center;
+    }
+    .footer_div .links .social_media p{
+        width: 100%;
+    }
+
     .footer_div .links .social_media a{
         margin: 0 5px;
     }
