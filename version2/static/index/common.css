@@ -26,19 +26,20 @@
 
 .description{
     max-width: 100%;
-    font-size: 1.1rem;
-    font-family: var(--human-sans-regular);
+    font-size: 1.05rem;
+    font-family: var(--human-sans-light);
     text-align: left;
     margin: 5% 0;
     height: 100px;
 }
 
 .tag, .tagline{
-    font-family: var(--glorify-extra-light);
+    font-family: var(--glorify-light);
     font-size: 3rem;
     line-height: 3rem;
     margin-bottom: 10px;
     letter-spacing: 0px;
+    font-weight: normal;
 }
 .tag{
     letter-spacing: normal; 

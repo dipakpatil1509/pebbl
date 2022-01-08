@@ -30,17 +30,21 @@
     top: -25px;
     width: 100%;
 }
-
-/* .tabs-mobile::after{
+.tabs-mobile.fixed{
+    position: fixed;
+    top: 0;
+    background: #000;
+}
+.tabs-mobile::after{
     content: "";
     position: absolute;
-    bottom: 0;
-    height: 50%;
+    top: 50%;
+    height: 80%;
     left:0;
     width: 100%;
     z-index: -1;
     background: var(--tab-active-color);
-} */
+}
 
 .tabs-desktop .tabs-button{
     background: none;
@@ -65,7 +69,7 @@
 .tabs-mobile .tabs-button{
     background: #000;
     color: #fff;
-    border-radius: 0;
+    border-radius: 30px;
     padding: 10px 5px;
     width: 33.333%;
     min-height: 50px;
@@ -80,62 +84,33 @@
 
 .tabs-mobile .tabs-button.first{
     background: var(--orange-dark);
+    border-top-left-radius: 0;
 }
 .tabs-mobile .tabs-button.second{
     background: var(--yellow-dark);
 }
 .tabs-mobile .tabs-button.third{
     background: var(--green-dark);
+    border-top-right-radius: 0;
+}
+.tabs-mobile .tabs-button.first.active{
+    border-top-left-radius: 30px;
+}
+.tabs-mobile .tabs-button.third.active{
+    border-top-right-radius: 30px;
 }
 .tabs-mobile .tabs-button.active{
     background: var(--tab-active-color);
 }
 
-.tabs-mobile .tabs-button:not(.third):before {
-    content: '';
-    background-image: radial-gradient(circle at 100% 100%, rgba(204, 0, 0, 0) 28px, var(--orange-dark) 26px);
-    position: absolute;
-    top: 0;
-    right: -28px;
-    width: 32px;
-    height:50%;
-    z-index: 6564782;
-}
 
-.tabs-mobile .tabs-button.second::before{
-    background-image: radial-gradient(circle at 100% 100%, rgba(204, 0, 0, 0) 28px, var(--yellow-dark) 25px);
-} 
-
-.tabs-mobile .tabs-button:not(.first):after {
-    content: '';
-    background-image: radial-gradient(circle at 0 0, rgba(204, 0, 0, 0) 28px, var(--yellow-dark) 25px);
-    position: absolute;
-    bottom: 0;
-    left: -28px;
-    width: 32px;
-    height:50%;
-    z-index: 6564782;
-}
-.tabs-mobile .tabs-button.third::after{
-    background-image: radial-gradient(circle at 0 0, rgba(204, 0, 0, 0) 28px, var(--green-dark) 25px);
-} 
-
-/* .br-tl-0{
-    border-top-left-radius: 0 !important;
-}
-
-.br-tr-0{
-    border-top-right-radius: 0 !important;
-}
- */
-
-/* .br-bl-0{
+.br-bl-0{
     border-bottom-left-radius: 0 !important;
 }
 
 .br-br-0{
     border-bottom-right-radius: 0 !important;
-} */
+}
 
 .tabs-desktop .tabs-button.active{
     color: #fff;

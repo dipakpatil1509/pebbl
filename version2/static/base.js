@@ -5,31 +5,31 @@ $(function(){
     const mobileWidth = 750;
     const validId = ['dating', 'networking', 'events']
 
-    // const mobileTabs = {
-    //     'dating':{
-    //         'second':'br-br-0',
-    //         'third':'br-bl-0 br-br-0'
-    //     },
-    //     'networking':{
-    //         'first':'br-bl-0',
-    //         'third':'br-br-0'
-    //     },
-    //     'events':{
-    //         'first':'br-bl-0 br-br-0',
-    //         'second':'br-bl-0'
-    //     }
-    // }
+    const mobileTabs = {
+        'dating':{
+            'second':'br-br-0',
+            'third':'br-bl-0 br-br-0'
+        },
+        'networking':{
+            'first':'br-bl-0',
+            'third':'br-br-0'
+        },
+        'events':{
+            'first':'br-bl-0 br-br-0',
+            'second':'br-bl-0'
+        }
+    }
 
     $('.tabs-button').click((e)=>{
         if(window.innerWidth <= mobileWidth){
             $('.tabs-mobile .tabs-button').removeClass('active');
-            $('.tabs-mobile .tabs-button').removeClass('br-l-0');
-            $('.tabs-mobile .tabs-button').removeClass('br-r-0');
+            $('.tabs-mobile .tabs-button').removeClass('br-bl-0');
+            $('.tabs-mobile .tabs-button').removeClass('br-br-0');
             $(e.target).addClass('active');
-            // let currentTab = mobileTabs[e.target.hash.replace('#', '')];
-            // Object.keys(currentTab).map((key)=>{
-            //     $('.tabs-mobile .tabs-button.'+key).addClass(currentTab[key])
-            // })
+            let currentTab = mobileTabs[e.target.hash.replace('#', '')];
+            Object.keys(currentTab).map((key)=>{
+                $('.tabs-mobile .tabs-button.'+key).addClass(currentTab[key])
+            })
         }else{
             $('.tabs-button').removeClass('active');
             $('.tabs-desktop.active').removeClass('active');
@@ -116,12 +116,10 @@ $(function(){
                 $('.header_div').css('position', 'fixed')
             }
             
-            if(distance < -25){
-                $('.tabs-mobile').css('position', 'fixed')
-                $('.tabs-mobile').css('top', '0')
+            if(distance < 0){
+                $('.tabs-mobile').addClass('fixed')
             }else{
-                $('.tabs-mobile').css('position', 'absolute')
-                $('.tabs-mobile').css('top', '-25px')
+                $('.tabs-mobile').removeClass('fixed')
             }
         }
         function windowResize() {
