@@ -89,6 +89,7 @@ html {
 	scroll-behavior: smooth;
 	position:relative;
 	overflow-x:hidden;
+    scroll-padding-block:15vh;
 }
 
 body {
@@ -242,7 +243,8 @@ input[type=number]::-webkit-outer-spin-button {
     max-width: max-content;
     /* font-family: var(--glorify-semibold); */
     
-    font-family: "Cabin", sans-serif;
+    /* font-family: "Cabin", sans-serif; */
+    font-family: var(--human-sans-regular);
 }
 
 

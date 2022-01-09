@@ -39,7 +39,9 @@ $(function(){
         }
         $('.tab-section').removeClass('active');
         $(e.target.hash).addClass('active');
-        document.querySelector(e.target.hash).scrollIntoView();
+        if(e.originalEvent){
+            document.querySelector(e.target.hash).scrollIntoView();
+        }
         $("body").css("--tab-active-color", `var(--${$(e.target).data('color')})`);
     })
 
