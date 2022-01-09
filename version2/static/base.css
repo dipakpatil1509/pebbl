@@ -112,6 +112,13 @@ body {
 body::-webkit-scrollbar {
     display: none;
 }
+input,
+textarea,
+button,
+select,
+a {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
 a{
     color: inherit;
     text-decoration: none;
@@ -897,10 +904,6 @@ input[type=number]::-webkit-outer-spin-button {
         display: flex;
         align-items: center;
     }
-    .footer_div .links .social_media{
-        text-align: center;
-        justify-content: center;
-    }
     .footer_div .links .social_media p{
         width: 100%;
         margin-bottom: 10px;
@@ -910,7 +913,7 @@ input[type=number]::-webkit-outer-spin-button {
         margin: 0 5px;
     }
     .footer_div .links .social_media i{
-        font-size: 1.2rem;
+        font-size: 1.4rem;
     }
 
 }

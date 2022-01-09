@@ -39,6 +39,7 @@ $(function(){
         }
         $('.tab-section').removeClass('active');
         $(e.target.hash).addClass('active');
+        document.querySelector(e.target.hash).scrollIntoView();
         $("body").css("--tab-active-color", `var(--${$(e.target).data('color')})`);
     })
 
@@ -164,6 +165,28 @@ $(function(){
         }else{
             $('.tabs-desktop.active .tabs-button.active').trigger('click');
         }
+
+        $('#get_access').submit((e)=>{
+            e.preventDefault();
+            var data = $(e.target).serializeArray().reduce(function(obj, item) {
+                obj[item.name] = item.value;
+                return obj;
+            }, {});
+            $.post(
+                "https://submit-form.com/LY16md6k",
+                data,
+                null,
+                "json" // dataType must be set to json
+            )
+            .then(function (response) {
+                console.log(response);
+                $('#submit-btn').val('Submitted!');
+                $('#submit-btn').prop('disabled', true)
+            })
+            .catch(function (response) {
+                console.error(response);
+            });
+        })
         // $('.modal-trigger').click((e)=>{
         //     e.preventDefault();
         //     $('#formModal').css('display', 'flex')
