@@ -615,7 +615,7 @@ input[type=number]::-webkit-outer-spin-button {
     vertical-align:  bottom;
     margin:12px 0 0 0;
     font-size: 0.9rem;
-
+    width: 100%;
 }
 
 .email_input_div{
@@ -645,7 +645,7 @@ input[type=number]::-webkit-outer-spin-button {
     padding: 5px;
 }
 
-.email_input_div .submit-btn a{
+.email_input_div .submit-btn .button{
     box-sizing: border-box;
     background: #000;
     /* background:var(--orange-dark); */
@@ -812,7 +812,7 @@ input[type=number]::-webkit-outer-spin-button {
     .email_input_div .submit-btn{
         padding: 5px;
     }
-    .email_input_div .submit-btn a{
+    .email_input_div .submit-btn .button{
         padding:5px 10px;
         font-size: 0.8rem;
         /* padding-right: 8px;

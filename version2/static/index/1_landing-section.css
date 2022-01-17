@@ -20,11 +20,13 @@
     line-height: 5rem;
     letter-spacing: -1px;
     font-weight: normal;
+    max-width:max-content;
 }
 .landing-section .middle-text{
     font-family: Human Sans Light;
-    margin:15px auto;
+    margin:15px 0;
     font-size: 1rem;
+    max-width:750px;
 }
 
 .landing-section .email_input_div{
