@@ -134,8 +134,10 @@ $(function(){
             windowResize()
         }
 
-        $('.email').click((e)=>{
-            var email = $(e.target).parent().parent().children('input').val();
+        $('.email').submit((e)=>{
+            console.log(e);
+            e.preventDefault();
+            var email = $(e.target).children('input').val();
             console.log(email);
             if(email && isEmail(email)){
                 $.post(
@@ -152,13 +154,14 @@ $(function(){
                 .catch(function (response) {
                     console.error(response);
                 });
+                document.querySelector("#"+$(e.target).data("target")).scrollIntoView()
                 $('#email').val(email)
                 return true
             }
             else{
-                e.stopPropagation();
-                e.stopImmediatePropagation();
-                return
+                e.preventDefault();
+                // e.stopImmediatePropagation();
+                return false;
             }
         });
         
